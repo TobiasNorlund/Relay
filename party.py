@@ -5,37 +5,30 @@ import relay_controller as relay
 relay.init()
 
 print ""
-sys.stdout.write(" INITIATING PARTY SEQUENCE")
-sleep(2)
-for i in range(20):
-    sys.stdout.write(".")
-    sleep(0.4)
+print(" INITIATING PARTY SEQUENCE")
+sleep(1)
 
 print ""
 print ""
-sys.stdout.write(" OK ")
+print(" OK ")
 sleep(1)
-sys.stdout.write("..")
+print("..")
 sleep(1.5)
-sys.stdout.write(" HERE WE GO")
+print(" HERE WE GO")
 
 # Turn on smoke :P
-relay.on(1)
+relay.on(0)
 
-for i in range(15):
-    sys.stdout.write("O")
-    sleep(0.2)
-
-sys.stdout.write("!")
-
-sleep(5000)
+sleep(1)
 
 print ""
 print "Is that enough??"
 
-sleep(2000)
+sleep(1)
 
 print "No, don't think soo ... ;)"
 
 # Okay that's fine!
-relay.off(1)
+relay.off(0)
+
+print "Okay, lets party!"
