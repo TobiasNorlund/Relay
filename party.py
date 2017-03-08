@@ -51,7 +51,7 @@ try:
 	while(True):
 		
 		# Wait this long until next smoke epoch
-		sleep(randint(30, 500))
+		sleep(randint(30, 200))
 	
 		# Smoke!
 		relay.on(0)

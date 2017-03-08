@@ -4,9 +4,8 @@ import relay_controller as relay
 app = Flask(__name__)
 
 @app.route("/")
-@app.route('/<name>')
-def hello(name=None):
-    return render_template('WebPage1.html', name=name)
+def hello():
+    return render_template('WebPage1.html')
 
 @app.route('/on')
 def on(name=None):

@@ -7,16 +7,17 @@
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script> 
+    
+    <button style="width:200px;height:100px;" onclick="javascript:on()">Smoke weed every day</button><br />
+    <button style="width:200px;height:100px;" onclick="javascript:off()">Off</button>
     <script type="text/javascript">
-function on(){
-  $.get("/on")
-}
-function off(){
-  $.get("/off")
-}
+    function on() {
+        $.get("/on")
+    }
+    function off() {
+        $.get("/off")
+    }
+
     </script>
-
-
-    <button style="width:200px;height:200px;" onmousedown="javascript:on()" onmouseup="javascript:off()">Smoke 'em outa here</button>
 </body>
 </html>
