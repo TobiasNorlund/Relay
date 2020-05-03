@@ -3,6 +3,7 @@ import RPi.GPIO as GPIO
 RELAY_PINS = [11, 12, 15, 16]
 
 def init():
+    GPIO.setmode(GPIO.BOARD)
     GPIO.setup(RELAY_PINS[0], GPIO.OUT)
     GPIO.setup(RELAY_PINS[1], GPIO.OUT)
     GPIO.setup(RELAY_PINS[2], GPIO.OUT)
